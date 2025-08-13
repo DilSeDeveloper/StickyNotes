@@ -1,0 +1,99 @@
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdd6bc, #fbc2eb);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Card */
+.create-card {
+    background-color: #fff8e7;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #ff8c42;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255,111,97,0.4);
+}
+
+textarea {
+    min-height: 120px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.03);
+}
+
+/* Cancel Button */
+.cancel-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #6a5acd;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #5a4bbf;
+    transform: scale(1.03);
+}

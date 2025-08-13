@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Post</title>
+    <link rel="stylesheet" href="/edit.css">
 </head>
 <body>
-    <h2>Edit Your Post</h2>
-    <p>Post id: <%=post.id %> </p>
-    <p>Post username: <%= post.username%> </p>
-    <form method="post" action="/posts/<%=post.id%>?_method=PATCH" >
-        <textarea name="content"> <%= post.content%></textarea>
-        <button>Submit</button>
-    </form>
+    <div class="edit-card">
+        <h2>Edit Your Post</h2>
+        <div class="post-info">
+            <p>Post ID: <%= post.id %></p>
+            <p>Username: <%= post.username %></p>
+        </div>
+
+        <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+            <textarea name="content"><%= post.content %></textarea>
+            <button type="submit" class="btn update-btn">Update Post</button>
+        </form>
+
+        <a href="/posts" class="cancel-btn">Cancel</a>
+    </div>
 </body>
 </html>
